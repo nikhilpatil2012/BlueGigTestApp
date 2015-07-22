@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_marginBottom="5dp"
+android:background="#bbbbbb"
+>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            >
+
+
+            <TextView
+                android:layout_gravity="start"
+                android:gravity="top"
+                android:padding="10dp"
+                style="@style/myEditText"
+                android:id="@+id/device_message"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="21dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="Message From Guardian"
+                android:textColorHint="#000000"
+                android:textColor="#000000"
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/hour"
+                    android:hint="Enter Hour"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+
+                <EditText
+                    android:id="@+id/min"
+                    android:hint="Enter Minute"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/send_time"
+                    android:background="@drawable/button_select_effect"
+                    android:layout_gravity="left"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:text="Send Time"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+
+
+
+            <Button
+                android:id="@+id/vibrate_device"
+                android:background="@drawable/button_select_effect"
+                android:layout_margin="30dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_gravity="left"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:text="Vibrate Device"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:hint="Enter Num eg 02"
+                    android:id="@+id/led_num"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+
+                <Button
+                    android:id="@+id/led_on"
+                    android:background="@drawable/button_select_effect"
+                    android:layout_gravity="left"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:text="LED On"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    </LinearLayout>
+
+
+
